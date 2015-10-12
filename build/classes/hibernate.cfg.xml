@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <!-- a SessionFactory instance listed as /jndi/name -->
+    <session-factory>
+
+        <!-- properties -->
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+        
+          <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="cache.use_second_level_cache">false</property>
+        
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+        
+        <property name="connection.url">jdbc:mysql://localhost:3306/patio-limonn</property>
+        
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+       <property name="format_sql">true</property>
+       
+      
+       
+        
+        <mapping class="com.limonn.entities.User"/>
+        <mapping class="com.limonn.entities.Activo"/>
+        <mapping class="com.limonn.entities.Cantidad"/>
+        <mapping class="com.limonn.entities.Cart"/>
+        <mapping class="com.limonn.entities.EjercicioFinanciero"/>
+        <mapping class="com.limonn.entities.Envio"/>
+        <mapping class="com.limonn.entities.Especialidad"/>
+        <mapping class="com.limonn.entities.Pasivo"/>
+        <mapping class="com.limonn.entities.Pedido"/>
+        <mapping class="com.limonn.entities.Plato"/>
+        <mapping class="com.limonn.entities.PlatoCompuesto"/>
+        <mapping class="com.limonn.entities.Role"/>
+        <mapping class="com.limonn.entities.Settings"/>
+        
+        
+        
+
+    </session-factory>
+    </hibernate-configuration>

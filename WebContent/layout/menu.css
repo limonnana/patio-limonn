@@ -1,0 +1,56 @@
+/* CSS from tutorials of www.alsacreations.com/articles */
+
+
+dt, dl, dd, ul, li {
+list-style-type: none;
+margin: 1px 10px 0 0;
+padding: 0;
+}
+
+#menu {
+position : absolute;
+left: 640px;
+top: 95px;
+background: #eee;
+padding-left: 18px;
+    border:solid;
+	border-width:1px;
+	border-color:#000; 
+	width: 525px;
+}
+
+#menu dl {
+float: left;
+}
+#menu li {
+display: inline;
+background: #eee;
+padding-left: 5px;
+padding-right:2px;
+  
+}
+
+#menu a {
+text-decoration: none;
+color: #000;
+
+}
+
+#smenu1, #smenu2, #smenu3, #smenu4 {
+position: absolute;
+left: 0;
+font-size: 0.9em;
+/* border-top: 1px solid gray; */
+width: 400px;
+}
+
+
+.mentions {
+position: absolute;
+bottom : 300px;
+left : 10px;
+color: #000;
+background-color: #ddd;
+}
+
+
